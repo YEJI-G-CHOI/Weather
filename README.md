@@ -15,8 +15,12 @@ Expoを使用して作った天気アプリケーションです。
 ## Screen Layout
 
 + iOS
+  <div>
+    <img width="250" alt="iOS_0713" src="https://github.com/user-attachments/assets/3b11d19e-5675-4f87-8d5a-27b06a8c393e">
+    <img width="250" alt="iOS_0714" src="https://github.com/user-attachments/assets/06159319-9dc0-470c-8f95-559475216097">
+    <img width="250" alt="iOS_0715" src="https://github.com/user-attachments/assets/f2c4ebad-d79f-4251-9de6-ecbffc72c29a">
+  </div>
   
-
 + Android
   <div>
     <img width="200" alt="aOS_0713" src="https://github.com/user-attachments/assets/7482300e-b207-44cb-8401-1c51494fe876">
