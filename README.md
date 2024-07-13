@@ -49,6 +49,6 @@ Expoを使用して作った天気アプリケーションです。
 
 
 ## :exclamation:
-날씨 정보를 가져올 때 [Open Weather](https://openweathermap.org/)에서 발급받은 API KEY가 필요합니다.
+날씨 정보를 가져올 때 [Open Weather](https://openweathermap.org/){: target="_blank"}에서 발급받은 API KEY가 필요합니다.
 
-天気情報をチャレンジする時、[Open Weather](https://openweathermap.org/)から発行されたAIP＿KEYが必要です。
+天気情報をチャレンジする時、[Open Weather](https://openweathermap.org/){: target="_blank"}から発行されたAIP＿KEYが必要です。
