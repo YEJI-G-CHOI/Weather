@@ -22,13 +22,9 @@ Expoを使用して作った天気アプリケーションです。
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 
-<br/>
-
 ### Config
 <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=git&logoColor=white">
 
 ### Development
-
-### 
-
 <img src="https://img.shields.io/badge/react-20232b?style=for-the-badge&logo=react&logoColor=61DAFB"> 
+<img src="https://img.shields.io/badge/expo-000020?style=for-the-badge&logo=react&logoColor=61DAFB"> 
