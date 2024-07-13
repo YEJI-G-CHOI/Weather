@@ -10,7 +10,7 @@ Expoを使用して作った天気アプリケーションです。
 
 <br/>
 
-## Video　動画
+## Video 動画
 
 
 
@@ -21,6 +21,8 @@ Expoを使用して作った天気アプリケーションです。
 ### Environment
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+
+<br/>
 
 ### Config
 <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=git&logoColor=white">
