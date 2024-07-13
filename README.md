@@ -65,4 +65,4 @@ Expoを使用して作った天気モバイルアプリケーションです。
 ## :exclamation:
 날씨 정보를 가져올 때 [Open Weather](https://openweathermap.org/)에서 발급받은 'API KEY'가 필요합니다.
 
-天気情報をチャレンジする時、[Open Weather](https://openweathermap.org/)から発行された「AIP KEY」が必要です。
+天気情報をチャレンジする時、[Open Weather](https://openweathermap.org/)から発行された「API KEY」が必要です。
