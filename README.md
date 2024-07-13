@@ -23,9 +23,9 @@ Expoを使用して作った天気アプリケーションです。
   
 + Android
   <div>
-    <img width="200" alt="aOS_0713" src="https://github.com/user-attachments/assets/7482300e-b207-44cb-8401-1c51494fe876">
-    <img width="200" alt="aOS_0714" src="https://github.com/user-attachments/assets/f923c44b-ae8d-41fe-b631-063b88ef0cba">
-    <img width="200" alt="aOS_0715" src="https://github.com/user-attachments/assets/d4670cc1-7eb0-4eac-9d07-e143e4db5a1d">
+    <img width="250" alt="aOS_0713" src="https://github.com/user-attachments/assets/7482300e-b207-44cb-8401-1c51494fe876">
+    <img width="250" alt="aOS_0714" src="https://github.com/user-attachments/assets/f923c44b-ae8d-41fe-b631-063b88ef0cba">
+    <img width="250" alt="aOS_0715" src="https://github.com/user-attachments/assets/d4670cc1-7eb0-4eac-9d07-e143e4db5a1d">
   </div>
 
 
