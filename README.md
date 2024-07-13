@@ -20,7 +20,7 @@ Expoを使用して作った天気アプリケーションです。
 
 ### Environment
 <div align=flex-start>
-  <img src="https://img.shields.io/badge/VISUAL STUDIO CODE-F05032?style=for-the-badge&logo=visual&logoColor=white">
+  <img src="https://img.shields.io/badge/VISUAL STUDIO CODE-0678d4?style=for-the-badge&logo=&logoColor=white">
   <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 </div>
