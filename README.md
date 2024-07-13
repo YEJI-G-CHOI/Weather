@@ -46,9 +46,9 @@ Expoを使用して作った天気モバイルアプリケーションです。
 
 ### Development
 <div align=flex-start>
-  <img src="https://img.shields.io/badge/javascript-181717?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+  <img src="https://img.shields.io/badge/javascript-ffffff?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
   <img src="https://img.shields.io/badge/react-20232b?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <img src="https://img.shields.io/badge/expo-181717?style=for-the-badge&logo=expo&logoColor=000020">
+  <img src="https://img.shields.io/badge/expo-ffffff?style=for-the-badge&logo=expo&logoColor=000020">
 </div>
 
 
