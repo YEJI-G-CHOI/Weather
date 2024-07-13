@@ -26,4 +26,4 @@ Expoを使用して作った天気アプリケーションです。
 
 ### 
 
-<img src="https://img.shields.io/badge/react-#ffffff?style=for-the-badge&logo=react&logoColor=#61DAFB"> 
+<img src="https://img.shields.io/badge/react-ffffff?style=for-the-badge&logo=react&logoColor=61DAFB"> 
