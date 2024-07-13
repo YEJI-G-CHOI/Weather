@@ -16,16 +16,16 @@ Expoを使用して作った天気アプリケーションです。
 
 + iOS
   <div>
-    <img width="250" alt="iOS_0713" src="https://github.com/user-attachments/assets/3b11d19e-5675-4f87-8d5a-27b06a8c393e">
-    <img width="250" alt="iOS_0714" src="https://github.com/user-attachments/assets/06159319-9dc0-470c-8f95-559475216097">
-    <img width="250" alt="iOS_0715" src="https://github.com/user-attachments/assets/f2c4ebad-d79f-4251-9de6-ecbffc72c29a">
+    <img width="250" alt="iOS_0713" src="https://github.com/user-attachments/assets/fc20d540-0954-440d-988a-9f8b457248cf">
+    <img width="250" alt="iOS_0714" src="https://github.com/user-attachments/assets/ac8c2584-5e89-4e1a-a524-03c75dc65b13">
+    <img width="250" alt="iOS_0717" src="https://github.com/user-attachments/assets/43695ffe-1127-4dd8-9f4d-410e33387c34">
   </div>
   
 + Android
   <div>
-    <img width="250" alt="aOS_0713" src="https://github.com/user-attachments/assets/7482300e-b207-44cb-8401-1c51494fe876">
-    <img width="250" alt="aOS_0714" src="https://github.com/user-attachments/assets/f923c44b-ae8d-41fe-b631-063b88ef0cba">
-    <img width="250" alt="aOS_0715" src="https://github.com/user-attachments/assets/d4670cc1-7eb0-4eac-9d07-e143e4db5a1d">
+    <img width="250" alt="aOS_0713" src="https://github.com/user-attachments/assets/5187363b-23f4-49e8-a4c6-ac8c2235cb5b">
+    <img width="250" alt="aOS_0714" src="https://github.com/user-attachments/assets/985504d3-ff45-407f-bef4-32af96947922">
+    <img width="250" alt="aOS_07017" src="https://github.com/user-attachments/assets/549a4918-611f-4658-a324-d5a50c89ca04">
   </div>
 
 
