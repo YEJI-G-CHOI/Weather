@@ -1,4 +1,4 @@
-## Expo Weather App
+# Expo Weather App
 
 Expo 를 사용해 만든 날씨앱입니다.
 
