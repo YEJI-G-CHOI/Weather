@@ -8,7 +8,22 @@ Expoを使用して作った天気アプリケーションです。
 
 一日３時間ごとに、５日間の天気が確認できます。
 
- <br/>
+<br/>
 
-## 프로젝트 영상　動画
+## Video　動画
 
+
+
+<br/>
+
+## Stacks 使用技術
+
+### Environment
+
+### Config
+
+### Development
+
+### 
+
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> 
