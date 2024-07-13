@@ -1,10 +1,23 @@
-import { StyleSheet, Dimensions, View, ScrollView, Text, ActivityIndicator } from 'react-native';
 import { useState, useEffect } from 'react';
+import { StyleSheet, Dimensions, View, ScrollView, Text, ActivityIndicator } from 'react-native';
 import * as Location from "expo-location";
-import WEATHER_API from "./WeatherApi";
+import { MaterialCommunityIcons, Fontisto } from "@expo/vector-icons";
+import WEATHER_API_KEY from "./WeatherApi";
 
 // 화면 크기
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
+
+// 날씨 아이콘
+const icons = {
+  "Clear": "day-sunny",
+  "Clouds": "cloudy",
+  "Rain": "rains",
+  "Snow": "snow",
+  "Thunderstorm": "lightning",
+  "Drizzle": "rain",
+  "Atmosphere": "cloudy-gusts"
+};
+
 
 export default function App() {
   const [isgrant, setIsgrant] = useState(true);
@@ -26,7 +39,7 @@ export default function App() {
     setCity(location[0].city === null ? location[0].region : location[0].city);
 
     // 날씨 정보
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${WEATHER_API}&units=metric`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${WEATHER_API_KEY}&units=metric`);
     const json = await response.json();
     setDays(json.list);
   };
@@ -42,7 +55,6 @@ export default function App() {
       </View>
 
       <ScrollView
-        contentContainerStyle={styles.weather}
         horizontal
         pagingEnabled
         showsHorizontalScrollIndicator={false}
@@ -54,9 +66,18 @@ export default function App() {
         ) : (
           days.map((day, index) => <View key={`DAY${index}`} style={styles.day}>
             <Text style={styles.date}>{day.dt_txt.substring(0, 16).replaceAll("-", ".")}</Text>
-            <Text style={styles.temp}>{parseFloat(day.main.temp).toFixed()}</Text>
-            <Text style={styles.main}>{day.weather[0].main}</Text>
-            <Text style={styles.description}>{day.weather[0].description}</Text>
+
+            <View style={styles.tempView}>
+              <Text style={styles.temp}>{parseFloat(day.main.temp).toFixed()}</Text>
+              <MaterialCommunityIcons name="temperature-celsius" size={100} color="#f78d65" marginTop={-50} />
+            </View>
+
+            <View style={styles.descriptionView}>
+              <Fontisto name={icons[day.weather[0].main]} size={70} color="#488c8a" />
+              <Text style={styles.main}>{day.weather[0].main}</Text>
+              <Text style={styles.description}>{day.weather[0].description}</Text>
+            </View>
+
           </View>)
 
         )}
@@ -80,8 +101,6 @@ const styles = StyleSheet.create({
     fontSize: 50,
     fontWeight: "700"
   },
-  weather: {
-  },
   day: {
     width: SCREEN_WIDTH,
   },
@@ -91,23 +110,26 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "600"
   },
+  tempView: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingLeft: 20
+  },
   temp: {
-    marginTop: 20,
-    marginLeft: 20,
     color: "#f78d65",
     fontSize: 170,
     fontWeight: "600"
   },
+  descriptionView: {
+    alignItems: "flex-end",
+    paddingRight: 20,
+  },
   main: {
-    alignSelf: "flex-end",
-    marginRight: 20,
     color: "#488c8a",
     fontSize: 40,
-    fontWeight: "600"
+    fontWeight: "600",
   },
   description: {
-    alignSelf: "flex-end",
-    marginRight: 20,
     color: "#56c8d4",
     fontSize: 20
   }
