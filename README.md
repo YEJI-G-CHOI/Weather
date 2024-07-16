@@ -61,7 +61,7 @@ Expoを使用して作った天気モバイルアプリケーションです。
 
 ## Video
 
-https://github.com/user-attachments/assets/81453bd4-753b-49d3-8d03-17e1979b0fac
+https://github.com/user-attachments/assets/fb01e7de-da43-4bd4-80d4-342386a38049
 
 
 <br/>
