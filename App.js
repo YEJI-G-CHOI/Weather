@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { StyleSheet, Dimensions, View, ScrollView, Text, ActivityIndicator } from 'react-native';
+import { StyleSheet, Dimensions, View, ScrollView, Text, ActivityIndicator, Button } from 'react-native';
 import * as Location from "expo-location";
-import { MaterialCommunityIcons, Fontisto } from "@expo/vector-icons";
+import { MaterialCommunityIcons, Fontisto, FontAwesome5 } from "@expo/vector-icons";
+import { Restart } from 'fiction-expo-restart';
 import WEATHER_API_KEY from "./WeatherApi";
 
 // 화면 크기
@@ -20,19 +21,22 @@ const icons = {
 
 
 export default function App() {
-  const [isgrant, setIsgrant] = useState(true);
+  const [isgrant, setIsgrant] = useState(false);
   const [city, setCity] = useState("Loading...");
   const [days, setDays] = useState([]);
 
-  const getWeather = async () => {
-    // 위치 정보에 대한 유저 권한 요청
+  // 위치 정보 제공에 대한 유저 권한 요청
+  const requestUserAuthority = async () => {
     const { granted } = await Location.requestForegroundPermissionsAsync();
 
-    // 유저가 권한 요청 거절
-    if (!granted) {
-      setIsgrant(false);
+    // 유저가 권한 요청 승인
+    if (granted) {
+      setIsgrant(true);
+      getWeather();
     }
+  };
 
+  const getWeather = async () => {
     // 유저 위치 정보
     const { coords: { latitude, longitude } } = await Location.getCurrentPositionAsync({ accuracy: 5 });
     const location = await Location.reverseGeocodeAsync({ latitude, longitude }, { useGoogleMaps: false });
@@ -44,12 +48,17 @@ export default function App() {
     setDays(json.list);
   };
 
+  const restart = () => {
+    setIsgrant(true);
+    Restart();
+  };
+
   useEffect(() => {
-    getWeather();
+    requestUserAuthority();
   }, []);
 
   return (
-    <View style={styles.container}>
+    isgrant ? (<View style={styles.container}>
       <View style={styles.city}>
         <Text style={styles.cityName}>{city}</Text>
       </View>
@@ -77,12 +86,28 @@ export default function App() {
               <Text style={styles.main}>{day.weather[0].main}</Text>
               <Text style={styles.description}>{day.weather[0].description}</Text>
             </View>
-
           </View>)
 
         )}
       </ScrollView>
     </View>
+    ) : (
+      <View style={{ ...styles.container, alignItems: "center", justifyContent: "center" }}>
+        <FontAwesome5 name="cloud-moon" size={100} color="#488c8a" />
+
+        <Text style={styles.infoHeader}>권한을 허용하지 않으셨네요!</Text>
+        <Text style={styles.infoText}>원활한 날씨 정보 업데이트를 위해</Text>
+        <Text style={styles.infoText}>권한을 허용해주세요.</Text>
+
+        <View style={styles.btnView}>
+          <Button
+            title="권한 허용하기"
+            color="#488c8a"
+            onPress={() => restart()}
+          />
+        </View>
+      </View>
+    )
   );
 }
 
@@ -92,7 +117,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#f7f4e1"
   },
   city: {
-    flex: 1,
+    flex: 1.5,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -132,5 +157,17 @@ const styles = StyleSheet.create({
   description: {
     color: "#56c8d4",
     fontSize: 20
-  }
+  },
+  infoHeader: {
+    marginTop: 50,
+    marginBottom: 20,
+    fontSize: 25,
+    fontWeight: "600"
+  },
+  infoText: {
+    fontSize: 15
+  },
+  btnView: {
+    marginTop: 50
+  },
 });
