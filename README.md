@@ -16,16 +16,20 @@ Expoを使用して作った天気モバイルアプリケーションです。
 
 + iOS
   <div>
-    <img width="250" alt="iOS_0713" src="https://github.com/user-attachments/assets/fc20d540-0954-440d-988a-9f8b457248cf">
-    <img width="250" alt="iOS_0714" src="https://github.com/user-attachments/assets/ac8c2584-5e89-4e1a-a524-03c75dc65b13">
-    <img width="250" alt="iOS_0717" src="https://github.com/user-attachments/assets/43695ffe-1127-4dd8-9f4d-410e33387c34">
+    <img width="200" alt="iOS_grant" src="https://github.com/user-attachments/assets/690835ac-7541-4d3f-8728-3d4040e1a425">
+    <img width="200" alt="iOS_loading" src="https://github.com/user-attachments/assets/f5a8fb81-d0c3-4290-a69f-84077f4956bf">
+    <img width="200" alt="iOS_0713" src="https://github.com/user-attachments/assets/fc20d540-0954-440d-988a-9f8b457248cf">
+    <img width="200" alt="iOS_0714" src="https://github.com/user-attachments/assets/ac8c2584-5e89-4e1a-a524-03c75dc65b13">
+    <img width="200" alt="iOS_0717" src="https://github.com/user-attachments/assets/43695ffe-1127-4dd8-9f4d-410e33387c34">
   </div>
   
 + Android
   <div>
-    <img width="250" alt="aOS_0713" src="https://github.com/user-attachments/assets/5187363b-23f4-49e8-a4c6-ac8c2235cb5b">
-    <img width="250" alt="aOS_0714" src="https://github.com/user-attachments/assets/985504d3-ff45-407f-bef4-32af96947922">
-    <img width="250" alt="aOS_07017" src="https://github.com/user-attachments/assets/549a4918-611f-4658-a324-d5a50c89ca04">
+    <img width="200" alt="aOS_grant" src="https://github.com/user-attachments/assets/b4b82b6c-a003-4ccd-82cd-e40ccb6840ec">
+    <img width="200" alt="aOS_loading" src="https://github.com/user-attachments/assets/f32ab486-3c36-442e-a951-7f2795f1c2db">
+    <img width="200" alt="aOS_0713" src="https://github.com/user-attachments/assets/5187363b-23f4-49e8-a4c6-ac8c2235cb5b">
+    <img width="200" alt="aOS_0714" src="https://github.com/user-attachments/assets/985504d3-ff45-407f-bef4-32af96947922">
+    <img width="200" alt="aOS_07017" src="https://github.com/user-attachments/assets/549a4918-611f-4658-a324-d5a50c89ca04">
   </div>
 
 
