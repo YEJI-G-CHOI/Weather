@@ -4,6 +4,7 @@ import * as Location from "expo-location";
 import { MaterialCommunityIcons, Fontisto, FontAwesome5 } from "@expo/vector-icons";
 import { Restart } from 'fiction-expo-restart';
 import WEATHER_API_KEY from "./WeatherApi";
+import { theme } from './colors';
 
 // 화면 크기
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
@@ -70,7 +71,7 @@ export default function App() {
       >
         {days.length === 0 ? (
           <View style={styles.day}>
-            <ActivityIndicator size={"large"} color={"#f78d65"} />
+            <ActivityIndicator size={"large"} color={theme.red} />
           </View>
         ) : (
           days.map((day, index) => <View key={`DAY${index}`} style={styles.day}>
@@ -78,11 +79,11 @@ export default function App() {
 
             <View style={styles.tempView}>
               <Text style={styles.temp}>{parseFloat(day.main.temp).toFixed()}</Text>
-              <MaterialCommunityIcons name="temperature-celsius" size={100} color="#f78d65" marginTop={-50} />
+              <MaterialCommunityIcons name="temperature-celsius" size={100} color={theme.red} marginTop={-50} />
             </View>
 
             <View style={styles.descriptionView}>
-              <Fontisto name={icons[day.weather[0].main]} size={70} color="#488c8a" />
+              <Fontisto name={icons[day.weather[0].main]} size={70} color={theme.green} />
               <Text style={styles.main}>{day.weather[0].main}</Text>
               <Text style={styles.description}>{day.weather[0].description}</Text>
             </View>
@@ -93,7 +94,7 @@ export default function App() {
     </View>
     ) : (
       <View style={{ ...styles.container, alignItems: "center", justifyContent: "center" }}>
-        <FontAwesome5 name="cloud-moon" size={100} color="#488c8a" />
+        <FontAwesome5 name="cloud-moon" size={100} color={theme.green} />
 
         <Text style={styles.infoHeader}>권한을 허용하지 않으셨네요!</Text>
         <Text style={styles.infoText}>원활한 날씨 정보 업데이트를 위해</Text>
@@ -102,7 +103,7 @@ export default function App() {
         <View style={styles.btnView}>
           <Button
             title="권한 허용하기"
-            color="#488c8a"
+            color={theme.green}
             onPress={() => restart()}
           />
         </View>
@@ -114,7 +115,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f7f4e1"
+    backgroundColor: theme.background
   },
   city: {
     flex: 1.5,
@@ -122,7 +123,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   cityName: {
-    color: "#fcbc7e",
+    color: theme.orange,
     fontSize: 50,
     fontWeight: "700"
   },
@@ -131,7 +132,7 @@ const styles = StyleSheet.create({
   },
   date: {
     alignSelf: "center",
-    color: "#f78d65",
+    color: theme.red,
     fontSize: 30,
     fontWeight: "600"
   },
@@ -141,7 +142,7 @@ const styles = StyleSheet.create({
     paddingLeft: 20
   },
   temp: {
-    color: "#f78d65",
+    color: theme.red,
     fontSize: 170,
     fontWeight: "600"
   },
@@ -150,12 +151,12 @@ const styles = StyleSheet.create({
     paddingRight: 20,
   },
   main: {
-    color: "#488c8a",
+    color: theme.green,
     fontSize: 40,
     fontWeight: "600",
   },
   description: {
-    color: "#56c8d4",
+    color: theme.blue,
     fontSize: 20
   },
   infoHeader: {
